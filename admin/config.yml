@@ -1,0 +1,70 @@
+backend:
+  name: github
+  repo: aliasttt/hedefsurucukursu
+  branch: main
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "pages"
+    label: "Sayfalar"
+    files:
+      - label: "Ana Sayfa"
+        name: "home"
+        file: "index.html"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "İçerik", name: "body", widget: "markdown" }
+      
+      - label: "Hakkımızda"
+        name: "about"
+        file: "hakkimizda.html"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "İçerik", name: "body", widget: "markdown" }
+      
+      - label: "Kurs Fiyatları"
+        name: "prices"
+        file: "kurs-fiyatlarimiz.html"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "İçerik", name: "body", widget: "markdown" }
+      
+      - label: "İletişim"
+        name: "contact"
+        file: "iletisim.html"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "İçerik", name: "body", widget: "markdown" }
+      
+      - label: "Sıkça Sorulan Sorular"
+        name: "faq"
+        file: "sikca-sorulan-sorular.html"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "İçerik", name: "body", widget: "markdown" }
+      
+      - label: "Duyurular"
+        name: "announcements"
+        file: "duyurular.html"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "İçerik", name: "body", widget: "markdown" }
+      
+      - label: "Ekibimiz"
+        name: "team"
+        file: "ekibimiz.html"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "İçerik", name: "body", widget: "markdown" }
+
+  - name: "images"
+    label: "Görseller"
+    files:
+      - label: "Görsel Yönetimi"
+        name: "images"
+        file: "assets/img/images.yml"
+        fields:
+          - { label: "Görsel", name: "image", widget: "image" }
+          - { label: "Açıklama", name: "caption", widget: "string" } 
