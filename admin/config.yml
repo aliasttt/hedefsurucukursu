@@ -67,4 +67,4 @@ collections:
         file: "assets/img/images.yml"
         fields:
           - { label: "Görsel", name: "image", widget: "image" }
-          - { label: "Açıklama", name: "caption", widget: "string" } 
+          - { label: "Açıklama", name: "caption", widget: "string" }
