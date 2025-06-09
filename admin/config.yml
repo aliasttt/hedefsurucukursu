@@ -18,7 +18,7 @@ collections:
         file: "index.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "İçerik", name: "body", widget: "rich-text" }
           - { label: "Hero Görsel 1", name: "hero1", widget: "image" }
           - { label: "Hero Başlık 1", name: "hero1_title", widget: "string" }
           - { label: "Hero Açıklama 1", name: "hero1_desc", widget: "string" }
@@ -34,7 +34,7 @@ collections:
         file: "hakkimizda.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "İçerik", name: "body", widget: "rich-text" }
           - { label: "Görsel", name: "image", widget: "image" }
       
       - label: "Kurs Fiyatları"
@@ -42,14 +42,14 @@ collections:
         file: "kurs-fiyatlarimiz.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "İçerik", name: "body", widget: "rich-text" }
       
       - label: "İletişim"
         name: "contact"
         file: "iletisim.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "İçerik", name: "body", widget: "rich-text" }
           - { label: "Adres", name: "address", widget: "string" }
           - { label: "Telefon", name: "phone", widget: "string" }
           - { label: "E-posta", name: "email", widget: "string" }
@@ -61,14 +61,14 @@ collections:
         file: "sikca-sorulan-sorular.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "İçerik", name: "body", widget: "rich-text" }
       
       - label: "Duyurular"
         name: "announcements"
         file: "duyurular.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "İçerik", name: "body", widget: "rich-text" }
           - { label: "Görsel", name: "image", widget: "image" }
       
       - label: "Ekibimiz"
@@ -76,7 +76,7 @@ collections:
         file: "ekibimiz.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "İçerik", name: "body", widget: "rich-text" }
           - label: "Ekip Üyeleri"
             name: "members"
             widget: "list"
