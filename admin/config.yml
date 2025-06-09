@@ -4,8 +4,8 @@ backend:
   branch: main
   local_backend: true
   base_url: https://hedefsurucukursu.netlify.app
-  auth_endpoint: https://hedefsurucukursu.netlify.app/.netlify/identity/auth
-  token_endpoint: https://hedefsurucukursu.netlify.app/.netlify/identity/token
+  auth_endpoint: /.netlify/identity/auth
+  token_endpoint: /.netlify/identity/token
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
