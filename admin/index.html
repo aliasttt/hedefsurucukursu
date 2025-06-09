@@ -6,10 +6,12 @@
     <title>Netlify CMS</title>
   </head>
   <body>
-    <!-- به جای latest از نسخه پایدار استفاده کن -->
     <script src="https://unpkg.com/netlify-cms-app@2.10.192/dist/netlify-cms-app.js"></script>
+
     <script>
-      NetlifyCmsApp.init();
+      window.addEventListener("load", function () {
+        NetlifyCmsApp.init();
+      });
     </script>
   </body>
 </html>
