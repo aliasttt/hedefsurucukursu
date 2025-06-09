@@ -77,12 +77,14 @@ collections:
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
           - { label: "İçerik", name: "body", widget: "markdown" }
-          - { label: "Ekip Üyeleri", name: "members", widget: "list", fields:
-            - { label: "İsim", name: "name", widget: "string" }
-            - { label: "Pozisyon", name: "position", widget: "string" }
-            - { label: "Fotoğraf", name: "photo", widget: "image" }
-            - { label: "Açıklama", name: "description", widget: "text" }
-          }
+          - label: "Ekip Üyeleri"
+            name: "members"
+            widget: "list"
+            fields:
+              - { label: "İsim", name: "name", widget: "string" }
+              - { label: "Pozisyon", name: "position", widget: "string" }
+              - { label: "Fotoğraf", name: "photo", widget: "image" }
+              - { label: "Açıklama", name: "description", widget: "text" }
 
   - name: "images"
     label: "Görseller"
