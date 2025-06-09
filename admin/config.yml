@@ -2,10 +2,6 @@ backend:
   name: github
   repo: aliasttt/hedefsurucukursu
   branch: main
-  local_backend: true
-  base_url: https://hedefsurucukursu.netlify.app
-  auth_endpoint: /.netlify/identity/auth
-  token_endpoint: /.netlify/identity/token
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
