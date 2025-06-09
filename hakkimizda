@@ -18,8 +18,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/img/ChatGPT Image Jun 8, 2025, 11_34_41 AM.png" alt="Hedef Sürücü Kursu Logo">
+            <a class="navbar-brand" href="/">
+                <img src="assets/img/photo_2025-06-09_12-29-21.jpg" alt="Hedef Sürücü Kursu Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -27,28 +27,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                        <a class="nav-link" href="/">Ana Sayfa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="hakkimizda.html">Hakkımızda</a>
+                        <a class="nav-link active" href="/hakkimizda">Hakkımızda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ekibimiz.html">Ekibimiz</a>
+                        <a class="nav-link" href="/ekibimiz">Ekibimiz</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sikca-sorulan-sorular.html">S.S.S</a>
+                        <a class="nav-link" href="/sikca-sorulan-sorular">S.S.S</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="duyurular.html">Duyurular</a>
+                        <a class="nav-link" href="/duyurular">Duyurular</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="kursumuz.html">Kursumuz</a>
+                        <a class="nav-link" href="/kursumuz">Kursumuz</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="kurs-fiyatlarimiz.html">Fiyatlar</a>
+                        <a class="nav-link" href="/kurs-fiyatlarimiz">Fiyatlar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                        <a class="nav-link" href="/iletisim">İletişim</a>
                     </li>
                 </ul>
             </div>
