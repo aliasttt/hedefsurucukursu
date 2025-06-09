@@ -2,6 +2,7 @@ backend:
   name: github
   repo: aliasttt/hedefsurucukursu
   branch: main
+  local_backend: true
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
