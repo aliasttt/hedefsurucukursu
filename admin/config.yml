@@ -6,9 +6,12 @@ backend:
 media_folder: "assets/img"
 public_folder: "/assets/img"
 
-site_url: https://hedefsurucukursu.netlify.app
+identity_url: https://hedefsurucukursu.com.tr
+gateway_url:  https://hedefsurucukursu.com.tr/.netlify/git
+site_url: https://hedefsurucukursu.com.tr
 logo_url: https://hedefsurucukursu.netlify.app/assets/img/ChatGPT Image Jun 8, 2025, 11_34_41 AM.png
-
+site_name: "Hedef Sürücü Kursu"
+site_description: "Hedef Sürücü Kursu, profesyonel sürücü eğitimi ve danışmanlık hizmetleri sunar. Amacımız, güvenli ve bilinçli sürücüler yetiştirmektir."
 collections:
   - name: "pages"
     label: "Sayfalar"
