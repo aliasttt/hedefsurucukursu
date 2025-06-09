@@ -7,7 +7,7 @@ media_folder: "assets/img"
 public_folder: "/assets/img"
 
 site_url: https://hedefsurucukursu.netlify.app
-logo_url: https://hedefsurucukursu.netlify.app/images/logo.png
+logo_url: https://hedefsurucukursu.netlify.app/assets/img/ChatGPT Image Jun 8, 2025, 11_34_41 AM.png
 
 collections:
   - name: "pages"
@@ -19,6 +19,15 @@ collections:
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
           - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "Hero Görsel 1", name: "hero1", widget: "image" }
+          - { label: "Hero Başlık 1", name: "hero1_title", widget: "string" }
+          - { label: "Hero Açıklama 1", name: "hero1_desc", widget: "string" }
+          - { label: "Hero Görsel 2", name: "hero2", widget: "image" }
+          - { label: "Hero Başlık 2", name: "hero2_title", widget: "string" }
+          - { label: "Hero Açıklama 2", name: "hero2_desc", widget: "string" }
+          - { label: "Hero Görsel 3", name: "hero3", widget: "image" }
+          - { label: "Hero Başlık 3", name: "hero3_title", widget: "string" }
+          - { label: "Hero Açıklama 3", name: "hero3_desc", widget: "string" }
       
       - label: "Hakkımızda"
         name: "about"
@@ -26,6 +35,7 @@ collections:
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
           - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "Görsel", name: "image", widget: "image" }
       
       - label: "Kurs Fiyatları"
         name: "prices"
@@ -40,6 +50,11 @@ collections:
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
           - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "Adres", name: "address", widget: "string" }
+          - { label: "Telefon", name: "phone", widget: "string" }
+          - { label: "E-posta", name: "email", widget: "string" }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
       
       - label: "Sıkça Sorulan Sorular"
         name: "faq"
@@ -54,6 +69,7 @@ collections:
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
           - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "Görsel", name: "image", widget: "image" }
       
       - label: "Ekibimiz"
         name: "team"
@@ -61,6 +77,12 @@ collections:
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
           - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "Ekip Üyeleri", name: "members", widget: "list", fields:
+            - { label: "İsim", name: "name", widget: "string" }
+            - { label: "Pozisyon", name: "position", widget: "string" }
+            - { label: "Fotoğraf", name: "photo", widget: "image" }
+            - { label: "Açıklama", name: "description", widget: "text" }
+          }
 
   - name: "images"
     label: "Görseller"
@@ -71,3 +93,4 @@ collections:
         fields:
           - { label: "Görsel", name: "image", widget: "image" }
           - { label: "Açıklama", name: "caption", widget: "string" }
+          - { label: "Kategori", name: "category", widget: "select", options: ["hero", "team", "news", "other"] }
