@@ -6,6 +6,9 @@ backend:
 media_folder: "assets/img"
 public_folder: "/assets/img"
 
+site_url: https://hedefsruucukursu.netlify.app
+logo_url: https://hedefsruucukursu.netlify.app/images/logo.png
+
 collections:
   - name: "pages"
     label: "Sayfalar"
