@@ -4,6 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Content Manager</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    // Auto-redirect to /admin/#/ if hash is missing
+    if (!window.location.hash || window.location.hash === "#") {
+      window.location.replace(window.location.pathname + "#/" );
+    }
+  </script>
 </head>
 <body>
   <!-- این اسکریپت شامل React و CMS است -->
