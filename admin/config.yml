@@ -1,9 +1,7 @@
 backend:
-  name: github
+  name: git-gateway
   repo: aliasttt/hedefsurucukursu
   branch: main
-  auth_scope: repo
-  client_id: Ov23liAeBQa0wHRYIDOp
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
