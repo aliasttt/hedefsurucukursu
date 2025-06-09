@@ -3,12 +3,13 @@ backend:
   repo: aliasttt/hedefsurucukursu
   branch: main
   local_backend: true
+  base_url: https://hedefsurucukursu.netlify.app
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
 
-site_url: https://hedefsruucukursu.netlify.app
-logo_url: https://hedefsruucukursu.netlify.app/images/logo.png
+site_url: https://hedefsurucukursu.netlify.app
+logo_url: https://hedefsurucukursu.netlify.app/images/logo.png
 
 collections:
   - name: "pages"
