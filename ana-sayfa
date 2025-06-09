@@ -159,7 +159,7 @@
                         <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Trafik Kuralları ve İlk Yardım Eğitimi</li>
                         <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Simülasyon Destekli Pratik Dersler</li>
                     </ul>
-                    <a href="kursumuz.html" class="btn mt-3">Daha Fazla Bilgi</a>
+                    <a href="/kursumuz" class="btn mt-3">Daha Fazla Bilgi</a>
                 </div>
             </div>
         </div>
@@ -178,7 +178,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Yeni Dönem Kayıtları Başladı</h5>
                             <p class="card-text flex-grow-1">2024 yılı yeni dönem kayıtları için başvurular başladı. Erken kayıt avantajlarından yararlanın.</p>
-                            <a href="duyurular.html" class="btn mt-auto">Detaylar</a>
+                            <a href="/duyurular" class="btn mt-auto">Detaylar</a>
                         </div>
                     </div>
                 </div>
@@ -190,7 +190,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Yeni Eğitim Araçları</h5>
                             <p class="card-text flex-grow-1">Filo büyütme çalışmalarımız kapsamında yeni eğitim araçlarımız hizmetinize sunulmuştur.</p>
-                            <a href="duyurular.html" class="btn mt-auto">Detaylar</a>
+                            <a href="/duyurular" class="btn mt-auto">Detaylar</a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Başarı Oranlarımız</h5>
                             <p class="card-text flex-grow-1">2023 yılı sınav başarı oranlarımız açıklandı. %95'in üzerinde başarı oranı ile gurur duyuyoruz.</p>
-                            <a href="duyurular.html" class="btn mt-auto">Detaylar</a>
+                            <a href="/duyurular" class="btn mt-auto">Detaylar</a>
                         </div>
                     </div>
                 </div>
