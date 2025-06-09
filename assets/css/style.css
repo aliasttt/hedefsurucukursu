@@ -57,7 +57,7 @@ body.loaded {
 
 /* Modern Navbar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: #181818 !important;
     padding: 10px 0;
     min-height: 80px;
     transition: all 0.3s ease;
