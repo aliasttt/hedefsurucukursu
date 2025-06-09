@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: aliasttt/hedefsurucukursu
   branch: main
-  base_url: https://hedefsurucukursu.com.tr
+  base_url: https://xn--hedefsrckurslar-4vbbb82h.com.tr
   commit_messages:
     create: 'Create {{collection}} "{{slug}}"'
     update: 'Update {{collection}} "{{slug}}"'
@@ -13,8 +13,8 @@ backend:
 media_folder: "assets/img"
 public_folder: "/assets/img"
 
-site_url: https://hedefsurucukursu.com.tr
-logo_url: https://hedefsurucukursu.com.tr/assets/img/logo.png
+site_url: https://xn--hedefsrckurslar-4vbbb82h.com.tr
+logo_url: https://xn--hedefsrckurslar-4vbbb82h.com.tr/assets/img/logo.png
 site_name: "Hedef Sürücü Kursu"
 site_description: "Hedef Sürücü Kursu, profesyonel sürücü eğitimi ve danışmanlık hizmetleri sunar. Amacımız, güvenli ve bilinçli sürücüler yetiştirmektir."
 collections:

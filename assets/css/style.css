@@ -926,4 +926,23 @@ footer a:hover {
     border-color: var(--primary-red);
     box-shadow: 0 0 0 0.2rem rgba(211, 47, 47, 0.25);
     transform: translateY(-2px);
+}
+
+.ehliyet-btn {
+    background: #007bff;
+    color: #fff !important;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: none;
+    display: inline-block;
+}
+.ehliyet-btn:hover, .ehliyet-btn:focus {
+    background: #0056b3;
+    color: #fff !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 } 
