@@ -24,110 +24,159 @@ local_backend: true
 load_config_file: true
 
 collections:
-  - name: "pages"
-    label: "Sayfalar"
+  - name: "site_settings"
+    label: "Site Ayarları"
     files:
-      - label: "Ana Sayfa"
-        name: "home"
-        file: "index.html"
+      - label: "Genel Ayarlar"
+        name: "general"
+        file: "data/settings.json"
         fields:
-          - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "Açıklama", name: "desc", widget: "text" }
-          - { label: "Ana Görsel", name: "hero", widget: "image" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
-      - label: "Hakkımızda"
-        name: "about"
-        file: "hakkimizda.html"
-        fields:
-          - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "Açıklama", name: "desc", widget: "text" }
-          - { label: "Görsel", name: "image", widget: "image" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
-      - label: "Kurs Fiyatları"
-        name: "prices"
-        file: "kurs-fiyatlarimiz.html"
-        fields:
-          - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "Açıklama", name: "desc", widget: "text" }
-          - label: "Fiyat Kartları"
-            name: "cards"
-            widget: "list"
-            fields:
-              - { label: "Kart Başlık", name: "card_title", widget: "string" }
-              - { label: "Kart Açıklama", name: "card_desc", widget: "text" }
-              - { label: "Kart Fiyatı", name: "card_price", widget: "string" }
-              - { label: "Kart Görseli", name: "card_image", widget: "image" }
-      - label: "İletişim"
+          - { label: "Site Başlığı", name: "site_title", widget: "string" }
+          - { label: "Site Açıklaması", name: "site_description", widget: "text" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Favicon", name: "favicon", widget: "image" }
+          - { label: "Meta Keywords", name: "meta_keywords", widget: "string" }
+          - { label: "Meta Description", name: "meta_description", widget: "text" }
+
+      - label: "İletişim Bilgileri"
         name: "contact"
-        file: "contact.json"
+        file: "data/contact.json"
         fields:
-          - { label: "Başlık", name: "title", widget: "string" }
           - { label: "Adres", name: "address", widget: "string" }
           - { label: "Telefon", name: "phone", widget: "string" }
           - { label: "E-posta", name: "email", widget: "string" }
           - { label: "WhatsApp", name: "whatsapp", widget: "string" }
           - { label: "Instagram", name: "instagram", widget: "string" }
-          - { label: "Açıklama", name: "desc", widget: "text" }
-      - label: "Sıkça Sorulan Sorular"
-        name: "faq"
-        file: "sikca-sorulan-sorular.html"
+          - { label: "Facebook", name: "facebook", widget: "string" }
+          - { label: "Çalışma Saatleri", name: "working_hours", widget: "text" }
+          - { label: "Google Maps Embed URL", name: "maps_url", widget: "string" }
+
+      - label: "Sosyal Medya"
+        name: "social"
+        file: "data/social.json"
+        fields:
+          - { label: "Instagram URL", name: "instagram", widget: "string" }
+          - { label: "Facebook URL", name: "facebook", widget: "string" }
+          - { label: "WhatsApp URL", name: "whatsapp", widget: "string" }
+          - { label: "YouTube URL", name: "youtube", widget: "string" }
+
+  - name: "pages"
+    label: "Sayfalar"
+    files:
+      - label: "Ana Sayfa"
+        name: "home"
+        file: "data/home.json"
+        fields:
+          - { label: "Hero Başlık", name: "hero_title", widget: "string" }
+          - { label: "Hero Alt Başlık", name: "hero_subtitle", widget: "string" }
+          - { label: "Hero Görsel", name: "hero_image", widget: "image" }
+          - { label: "Hakkımızda Özet", name: "about_summary", widget: "text" }
+          - label: "Öne Çıkan Kurslar"
+            name: "featured_courses"
+            widget: "list"
+            fields:
+              - { label: "Kurs Adı", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "Görsel", name: "image", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }
+
+      - label: "Hakkımızda"
+        name: "about"
+        file: "data/about.json"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "Alt Başlık", name: "subtitle", widget: "string" }
+          - { label: "Ana Görsel", name: "main_image", widget: "image" }
+          - { label: "İçerik", name: "content", widget: "markdown" }
+          - label: "Özellikler"
+            name: "features"
+            widget: "list"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "İkon", name: "icon", widget: "string" }
+
+      - label: "Kurslar"
+        name: "courses"
+        file: "data/courses.json"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Açıklama", name: "description", widget: "text" }
+          - label: "Kurs Listesi"
+            name: "course_list"
+            widget: "list"
+            fields:
+              - { label: "Kurs Adı", name: "title", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "Fiyat", name: "price", widget: "string" }
+              - { label: "Süre", name: "duration", widget: "string" }
+              - { label: "Görsel", name: "image", widget: "image" }
+              - { label: "İçerik", name: "content", widget: "markdown" }
+              - label: "Özellikler"
+                name: "features"
+                widget: "list"
+                fields:
+                  - { label: "Özellik", name: "feature", widget: "string" }
+
       - label: "Duyurular"
         name: "announcements"
-        file: "duyurular.html"
+        file: "data/announcements.json"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "Açıklama", name: "desc", widget: "text" }
-          - { label: "Görsel", name: "image", widget: "image" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - label: "Duyuru Listesi"
+            name: "announcement_list"
+            widget: "list"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Tarih", name: "date", widget: "datetime" }
+              - { label: "Görsel", name: "image", widget: "image" }
+              - { label: "İçerik", name: "content", widget: "markdown" }
+
+      - label: "S.S.S"
+        name: "faq"
+        file: "data/faq.json"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - label: "Soru Listesi"
+            name: "faq_list"
+            widget: "list"
+            fields:
+              - { label: "Soru", name: "question", widget: "string" }
+              - { label: "Cevap", name: "answer", widget: "markdown" }
+
       - label: "Ekibimiz"
         name: "team"
-        file: "ekibimiz.html"
+        file: "data/team.json"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "Açıklama", name: "desc", widget: "text" }
+          - { label: "Açıklama", name: "description", widget: "text" }
           - label: "Ekip Üyeleri"
-            name: "members"
+            name: "team_members"
             widget: "list"
             fields:
               - { label: "İsim", name: "name", widget: "string" }
               - { label: "Pozisyon", name: "position", widget: "string" }
               - { label: "Fotoğraf", name: "photo", widget: "image" }
               - { label: "Açıklama", name: "description", widget: "text" }
-      - label: "Kursumuz"
-        name: "courses"
-        file: "kursumuz.html"
-        fields:
-          - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "Açıklama", name: "desc", widget: "text" }
-          - label: "Dersler"
-            name: "lessons"
-            widget: "list"
-            fields:
-              - { label: "Ders Başlık", name: "lesson_title", widget: "string" }
-              - { label: "Ders Açıklama", name: "lesson_desc", widget: "text" }
-              - { label: "Ders Görseli", name: "lesson_image", widget: "image" }
-      - label: "Yorumlar"
-        name: "comments"
-        file: "yorumlar.html"
-        fields:
-          - label: "Yorumlar Listesi"
-            name: "comments_list"
-            widget: "list"
-            fields:
-              - { label: "İsim", name: "name", widget: "string" }
-              - { label: "Yorum", name: "comment", widget: "text" }
-              - { label: "Avatar", name: "avatar", widget: "image" }
+              - { label: "Sosyal Medya", name: "social_media", widget: "object", fields: [
+                  { label: "Instagram", name: "instagram", widget: "string", required: false },
+                  { label: "Facebook", name: "facebook", widget: "string", required: false },
+                  { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+                ]}
 
   - name: "images"
     label: "Görseller"
     files:
       - label: "Görsel Yönetimi"
         name: "images"
-        file: "assets/img/images.yml"
+        file: "data/images.json"
         fields:
-          - { label: "Görsel", name: "image", widget: "image" }
-          - { label: "Açıklama", name: "caption", widget: "string" }
-          - { label: "Kategori", name: "category", widget: "select", options: ["hero", "team", "news", "other"] }
+          - label: "Görsel Listesi"
+            name: "image_list"
+            widget: "list"
+            fields:
+              - { label: "Görsel", name: "image", widget: "image" }
+              - { label: "Açıklama", name: "caption", widget: "string" }
+              - { label: "Kategori", name: "category", widget: "select", options: ["hero", "team", "news", "other"] }
+              - { label: "Alt Text", name: "alt", widget: "string" }

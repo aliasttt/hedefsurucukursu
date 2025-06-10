@@ -1,0 +1,51 @@
+{
+    "title": "Kurslarımız",
+    "description": "Size uygun ehliyet sınıfını seçin ve profesyonel eğitim alın",
+    "course_list": [
+        {
+            "title": "B Sınıfı Ehliyet",
+            "slug": "b-ehliyeti",
+            "description": "Otomobil kullanımı için gerekli olan B sınıfı ehliyet eğitimi",
+            "price": "₺5.000",
+            "duration": "2 Ay",
+            "image": "/assets/img/courses/b-license.jpg",
+            "content": "B sınıfı ehliyet, otomobil kullanımı için gerekli olan temel ehliyet sınıfıdır. Bu eğitimde, trafik kuralları, araç bakımı ve güvenli sürüş teknikleri gibi konular detaylı olarak işlenir.\n\nEğitim sürecinde teorik dersler ve uygulamalı direksiyon dersleri verilmektedir. Teorik derslerde trafik işaretleri, trafik kuralları ve ilk yardım gibi konular işlenirken, direksiyon derslerinde pratik sürüş deneyimi kazandırılmaktadır.",
+            "features": [
+                "Teorik dersler",
+                "Direksiyon dersleri",
+                "Sınav hazırlık",
+                "Sertifika"
+            ]
+        },
+        {
+            "title": "C Sınıfı Ehliyet",
+            "slug": "c-ehliyeti",
+            "description": "Kamyon ve kamyonet kullanımı için gerekli olan C sınıfı ehliyet eğitimi",
+            "price": "₺7.000",
+            "duration": "3 Ay",
+            "image": "/assets/img/courses/c-license.jpg",
+            "content": "C sınıfı ehliyet, kamyon ve kamyonet kullanımı için gerekli olan ehliyet sınıfıdır. Bu eğitimde, ağır vasıta kullanımına özel trafik kuralları, araç bakımı ve güvenli sürüş teknikleri detaylı olarak işlenir.\n\nEğitim sürecinde teorik dersler ve uygulamalı direksiyon dersleri verilmektedir. Teorik derslerde ağır vasıta trafik kuralları, araç bakımı ve ilk yardım gibi konular işlenirken, direksiyon derslerinde pratik sürüş deneyimi kazandırılmaktadır.",
+            "features": [
+                "Teorik dersler",
+                "Direksiyon dersleri",
+                "Sınav hazırlık",
+                "Sertifika"
+            ]
+        },
+        {
+            "title": "D Sınıfı Ehliyet",
+            "slug": "d-ehliyeti",
+            "description": "Minibüs ve otobüs kullanımı için gerekli olan D sınıfı ehliyet eğitimi",
+            "price": "₺8.000",
+            "duration": "3 Ay",
+            "image": "/assets/img/courses/d-license.jpg",
+            "content": "D sınıfı ehliyet, minibüs ve otobüs kullanımı için gerekli olan ehliyet sınıfıdır. Bu eğitimde, yolcu taşımacılığına özel trafik kuralları, araç bakımı ve güvenli sürüş teknikleri detaylı olarak işlenir.\n\nEğitim sürecinde teorik dersler ve uygulamalı direksiyon dersleri verilmektedir. Teorik derslerde yolcu taşımacılığı trafik kuralları, araç bakımı ve ilk yardım gibi konular işlenirken, direksiyon derslerinde pratik sürüş deneyimi kazandırılmaktadır.",
+            "features": [
+                "Teorik dersler",
+                "Direksiyon dersleri",
+                "Sınav hazırlık",
+                "Sertifika"
+            ]
+        }
+    ]
+} 

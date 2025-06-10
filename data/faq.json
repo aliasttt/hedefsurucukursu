@@ -1,0 +1,29 @@
+{
+    "title": "Sıkça Sorulan Sorular",
+    "faq_list": [
+        {
+            "question": "Ehliyet almak için yaş sınırı nedir?",
+            "answer": "B sınıfı ehliyet için minimum yaş 18'dir. C ve D sınıfı ehliyetler için minimum yaş 21'dir. Ayrıca, C ve D sınıfı ehliyet almak için en az 2 yıllık B sınıfı ehliyet deneyimi gereklidir."
+        },
+        {
+            "question": "Kayıt için hangi belgeler gereklidir?",
+            "answer": "Kayıt için gerekli belgeler:\n- Nüfus cüzdanı fotokopisi\n- İkametgah belgesi\n- Sağlık raporu\n- 2 adet vesikalık fotoğraf\n- Ödeme dekontu"
+        },
+        {
+            "question": "Eğitim süresi ne kadardır?",
+            "answer": "B sınıfı ehliyet eğitimi yaklaşık 2 ay sürmektedir. C ve D sınıfı ehliyet eğitimleri ise yaklaşık 3 ay sürmektedir. Eğitim süresi, öğrencinin öğrenme hızına ve sınav tarihlerine göre değişiklik gösterebilir."
+        },
+        {
+            "question": "Direksiyon dersleri nasıl yapılmaktadır?",
+            "answer": "Direksiyon dersleri, uzman eğitmenlerimiz eşliğinde birebir olarak yapılmaktadır. Her ders 50 dakika sürmektedir. Öğrenciler, trafiğe kapalı alanda başlayarak, zamanla trafikte sürüş deneyimi kazanmaktadırlar."
+        },
+        {
+            "question": "Sınav başarı oranınız nedir?",
+            "answer": "Kursumuzun sınav başarı oranı %85'in üzerindedir. Bu başarı, uzman eğitmen kadromuz, modern eğitim araçlarımız ve kapsamlı eğitim programımız sayesinde elde edilmektedir."
+        },
+        {
+            "question": "Ödeme seçenekleri nelerdir?",
+            "answer": "Eğitim ücretini peşin veya taksitli olarak ödeyebilirsiniz. Taksit seçenekleri için kurs ofisimizle görüşebilirsiniz. Ayrıca, kredi kartı ile ödeme imkanı da sunmaktayız."
+        }
+    ]
+} 

@@ -1,0 +1,28 @@
+{
+    "title": "Hakkımızda",
+    "subtitle": "20 Yıllık Tecrübe ile Yanınızdayız",
+    "main_image": "/assets/img/about.jpg",
+    "content": "Hedef Sürücü Kursu olarak, 2003 yılından bu yana İstanbul'da sürücü eğitimi alanında hizmet vermekteyiz. Kurulduğumuz günden bu yana, binlerce başarılı sürücü yetiştirdik ve bu başarılarımızla sektörde öncü konumumuzu korumaktayız.\n\nMisyonumuz, trafik güvenliğine katkıda bulunmak ve topluma güvenli sürücüler kazandırmaktır. Bu doğrultuda, en son teknoloji eğitim araçlarımız ve uzman eğitmen kadromuzla, öğrencilerimize en iyi eğitimi sunmaktayız.\n\nVizyonumuz, sürücü eğitimi alanında Türkiye'nin en güvenilir ve tercih edilen kurumu olmaktır. Bu hedefimize ulaşmak için sürekli kendimizi geliştiriyor ve eğitim kalitemizi artırıyoruz.",
+    "features": [
+        {
+            "title": "Uzman Eğitmenler",
+            "description": "Alanında uzman ve deneyimli eğitmen kadromuzla kaliteli eğitim",
+            "icon": "fas fa-chalkboard-teacher"
+        },
+        {
+            "title": "Modern Araçlar",
+            "description": "En son teknoloji eğitim araçlarıyla güvenli sürüş deneyimi",
+            "icon": "fas fa-car"
+        },
+        {
+            "title": "Başarı Odaklı",
+            "description": "Yüksek başarı oranıyla öğrencilerimizin hedeflerine ulaşması",
+            "icon": "fas fa-trophy"
+        },
+        {
+            "title": "Sürekli Destek",
+            "description": "Eğitim sürecinde ve sonrasında sürekli destek ve danışmanlık",
+            "icon": "fas fa-hands-helping"
+        }
+    ]
+} 

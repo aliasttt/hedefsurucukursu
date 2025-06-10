@@ -1,0 +1,23 @@
+{
+    "title": "Duyurular",
+    "announcement_list": [
+        {
+            "title": "Yeni Dönem Kayıtları Başladı",
+            "date": "2024-03-01T10:00:00",
+            "image": "/assets/img/announcements/registration.jpg",
+            "content": "2024 Bahar dönemi kayıtlarımız başlamıştır. Erken kayıt avantajlarından yararlanmak için hemen başvurun.\n\nKayıt için gerekli belgeler:\n- Nüfus cüzdanı fotokopisi\n- İkametgah belgesi\n- Sağlık raporu\n- 2 adet vesikalık fotoğraf"
+        },
+        {
+            "title": "Sınav Tarihleri Açıklandı",
+            "date": "2024-02-15T14:00:00",
+            "image": "/assets/img/announcements/exam.jpg",
+            "content": "Mart ayı sınav tarihleri açıklanmıştır. Sınav programı için kurs ofisimizi ziyaret edebilir veya web sitemizden detaylı bilgi alabilirsiniz.\n\nSınav tarihleri:\n- Teorik sınav: 15 Mart 2024\n- Direksiyon sınavı: 20 Mart 2024"
+        },
+        {
+            "title": "Yeni Eğitim Araçları",
+            "date": "2024-02-01T09:00:00",
+            "image": "/assets/img/announcements/vehicles.jpg",
+            "content": "Eğitim filomuzu genişlettik. Yeni model araçlarımızla daha modern ve güvenli bir eğitim deneyimi sunuyoruz.\n\nYeni araçlarımız:\n- 2024 Model Volkswagen Golf\n- 2024 Model Renault Clio\n- 2024 Model Fiat Egea"
+        }
+    ]
+} 

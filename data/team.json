@@ -1,0 +1,50 @@
+{
+    "title": "Ekibimiz",
+    "description": "Uzman ve deneyimli eğitmen kadromuzla yanınızdayız",
+    "team_members": [
+        {
+            "name": "Ahmet Yılmaz",
+            "position": "Kurucu Müdür",
+            "photo": "/assets/img/team/ahmet.jpg",
+            "description": "20 yıllık sürücü eğitimi deneyimi ile sektörün önde gelen isimlerinden biri. Binlerce başarılı sürücü yetiştirdi.",
+            "social_media": {
+                "instagram": "https://instagram.com/ahmetyilmaz",
+                "facebook": "https://facebook.com/ahmetyilmaz",
+                "linkedin": "https://linkedin.com/in/ahmetyilmaz"
+            }
+        },
+        {
+            "name": "Ayşe Demir",
+            "position": "Baş Eğitmen",
+            "photo": "/assets/img/team/ayse.jpg",
+            "description": "15 yıllık eğitmenlik deneyimi ile öğrencilerine en iyi eğitimi sunmayı hedefliyor. Trafik güvenliği konusunda uzman.",
+            "social_media": {
+                "instagram": "https://instagram.com/aysedemir",
+                "facebook": "https://facebook.com/aysedemir",
+                "linkedin": "https://linkedin.com/in/aysedemir"
+            }
+        },
+        {
+            "name": "Mehmet Kaya",
+            "position": "Direksiyon Eğitmeni",
+            "photo": "/assets/img/team/mehmet.jpg",
+            "description": "10 yıllık direksiyon eğitmenliği deneyimi ile öğrencilerine güvenli sürüş tekniklerini öğretiyor.",
+            "social_media": {
+                "instagram": "https://instagram.com/mehmetkaya",
+                "facebook": "https://facebook.com/mehmetkaya",
+                "linkedin": "https://linkedin.com/in/mehmetkaya"
+            }
+        },
+        {
+            "name": "Zeynep Şahin",
+            "position": "Teorik Ders Eğitmeni",
+            "photo": "/assets/img/team/zeynep.jpg",
+            "description": "Trafik kuralları ve ilk yardım konularında uzman. Öğrencilerine teorik bilgileri pratik örneklerle anlatıyor.",
+            "social_media": {
+                "instagram": "https://instagram.com/zeynepsahin",
+                "facebook": "https://facebook.com/zeynepsahin",
+                "linkedin": "https://linkedin.com/in/zeynepsahin"
+            }
+        }
+    ]
+} 
