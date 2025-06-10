@@ -5,6 +5,8 @@
     "whatsapp": "https://wa.me/905551234567",
     "instagram": "https://instagram.com/hedefsurucukursu",
     "facebook": "https://facebook.com/hedefsurucukursu",
-    "working_hours": "Pazartesi - Cumartesi: 09:00 - 18:00",
+    "working_hours": [
+        { "day": "Pazartesi - Cumartesi", "hours": "09:00 - 18:00" }
+    ],
     "maps_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.27184481!2d28.9776!3d41.0082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzI5LjUiTiAyOMKwNTgnMzkuNCJF!5e0!3m2!1str!2str!4v1234567890"
 } 
