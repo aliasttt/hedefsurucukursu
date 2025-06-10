@@ -21,6 +21,14 @@
       "description": "Minibüs ve otobüs kullanımı için gerekli olan D sınıfı ehliyet eğitimi",
       "image": "/assets/img/courses/d-license.jpg",
       "link": "/kursumuz/d-ehliyeti/"
+    },
+    {
+      "title": "Psikoteknik",
+      "description": "bireyin belirli bir işteki yeterliliğinin ortaya konması amacıyla, gerekli bedensel ve zihinsel özelliklerinin testler aracılığıyla ölçülmesidir"
+    },
+    {
+      "title": "SRC 1-2-3-4-5",
+      "description": "SRC belgesi; yük ve yolcu taşımacılığı yapan ticari araç sürücülerinin alması zorunlu olan bir belgedir."
     }
   ]
 }
