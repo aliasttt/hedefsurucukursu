@@ -32,65 +32,55 @@ collections:
         file: "index.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Açıklama", name: "desc", widget: "text" }
+          - { label: "Ana Görsel", name: "hero", widget: "image" }
           - { label: "İçerik", name: "body", widget: "markdown" }
-          - { label: "Hero Görsel 1", name: "hero1", widget: "image" }
-          - { label: "Hero Başlık 1", name: "hero1_title", widget: "string" }
-          - { label: "Hero Açıklama 1", name: "hero1_desc", widget: "string" }
-          - { label: "Hero Görsel 2", name: "hero2", widget: "image" }
-          - { label: "Hero Başlık 2", name: "hero2_title", widget: "string" }
-          - { label: "Hero Açıklama 2", name: "hero2_desc", widget: "string" }
-          - { label: "Hero Görsel 3", name: "hero3", widget: "image" }
-          - { label: "Hero Başlık 3", name: "hero3_title", widget: "string" }
-          - { label: "Hero Açıklama 3", name: "hero3_desc", widget: "string" }
-      
       - label: "Hakkımızda"
         name: "about"
         file: "hakkimizda.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "Açıklama", name: "desc", widget: "text" }
           - { label: "Görsel", name: "image", widget: "image" }
-      
+          - { label: "İçerik", name: "body", widget: "markdown" }
       - label: "Kurs Fiyatları"
         name: "prices"
         file: "kurs-fiyatlarimiz.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Açıklama", name: "desc", widget: "text" }
           - { label: "İçerik", name: "body", widget: "markdown" }
-      
       - label: "İletişim"
         name: "contact"
         file: "iletisim.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
           - { label: "Adres", name: "address", widget: "string" }
           - { label: "Telefon", name: "phone", widget: "string" }
           - { label: "E-posta", name: "email", widget: "string" }
           - { label: "WhatsApp", name: "whatsapp", widget: "string" }
           - { label: "Instagram", name: "instagram", widget: "string" }
-      
+          - { label: "Açıklama", name: "desc", widget: "text" }
       - label: "Sıkça Sorulan Sorular"
         name: "faq"
         file: "sikca-sorulan-sorular.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
           - { label: "İçerik", name: "body", widget: "markdown" }
-      
       - label: "Duyurular"
         name: "announcements"
         file: "duyurular.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "Açıklama", name: "desc", widget: "text" }
           - { label: "Görsel", name: "image", widget: "image" }
-      
+          - { label: "İçerik", name: "body", widget: "markdown" }
       - label: "Ekibimiz"
         name: "team"
         file: "ekibimiz.html"
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - { label: "Açıklama", name: "desc", widget: "text" }
           - label: "Ekip Üyeleri"
             name: "members"
             widget: "list"
