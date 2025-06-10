@@ -119,22 +119,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Loading Animation
+// Add loading animation if it doesn't exist
 document.addEventListener('DOMContentLoaded', function() {
-    const loading = document.querySelector('.loading');
-    const body = document.body;
-    
-    // Hide loading screen and show content
-    setTimeout(() => {
-        loading.classList.add('hidden');
-        body.classList.add('loaded');
-        
-        // Trigger fade-in animations for elements
-        const fadeElements = document.querySelectorAll('.fade-in');
-        fadeElements.forEach(element => {
-            element.classList.add('visible');
-        });
-    }, 1000);
+    if (!document.querySelector('.loading')) {
+        const loading = document.createElement('div');
+        loading.className = 'loading';
+        loading.innerHTML = '<div class="loading-spinner"></div>';
+        document.body.insertBefore(loading, document.body.firstChild);
+    }
 });
 
 // Navbar Scroll Effect
@@ -278,4 +270,36 @@ document.querySelectorAll('.btn').forEach(button => {
             ripple.remove();
         }, 600);
     });
+});
+
+// Mobile Navbar Toggle Fix
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    if (navbarToggler && navbarCollapse) {
+        navbarToggler.addEventListener('click', function() {
+            navbarCollapse.classList.toggle('show');
+        });
+    }
+
+    // Add WhatsApp fixed button if it doesn't exist
+    if (!document.querySelector('.whatsapp-fixed')) {
+        const whatsappFixed = document.createElement('div');
+        whatsappFixed.className = 'whatsapp-fixed';
+        whatsappFixed.innerHTML = `
+            <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        `;
+        document.body.appendChild(whatsappFixed);
+    }
+});
+
+// Loading Animation
+window.addEventListener('load', function() {
+    const loading = document.querySelector('.loading');
+    if (loading) {
+        loading.classList.add('hidden');
+    }
 }); 

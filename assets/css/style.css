@@ -602,10 +602,9 @@ footer a:hover {
 /* WhatsApp Fixed Button */
 .whatsapp-fixed {
     position: fixed;
-    bottom: 30px;
-    left: 30px;
+    bottom: 20px;
+    left: 20px;
     z-index: 1000;
-    transition: var(--transition);
 }
 
 .whatsapp-fixed a {
@@ -614,15 +613,18 @@ footer a:hover {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background: #25D366;
+    background-color: #25D366;
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-    transition: var(--transition);
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    border: none;
 }
 
 .whatsapp-fixed a:hover {
-    transform: translateY(-5px) scale(1.1);
+    transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+    text-decoration: none !important;
 }
 
 .whatsapp-fixed i {
