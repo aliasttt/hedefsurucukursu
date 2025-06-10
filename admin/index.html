@@ -6,10 +6,8 @@
   <title>Content Manager</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
-    // ریدایرکت خودکار به /admin/#/
-    if (window.location.pathname === '/admin') {
-      window.location.replace('/admin/#/');
-    }
+    // ریدایرکت مستقیم به پنل CMS
+    window.location.href = "https://app.netlify.com/sites/hedefsurucukursu/identity";
   </script>
 </head>
 <body>
@@ -20,7 +18,7 @@
       window.netlifyIdentity.on("init", user => {
         if (!user) {
           window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/#/";
+            window.location.href = "https://app.netlify.com/sites/hedefsurucukursu/identity";
           });
         }
       });
