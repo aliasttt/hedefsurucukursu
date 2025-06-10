@@ -6,9 +6,9 @@
   <title>Content Manager</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
-    // Auto-redirect to /admin/#/ if hash is missing
-    if (!window.location.hash || window.location.hash === "#") {
-      window.location.replace(window.location.pathname.replace(/\/?$/, "/") + "#/");
+    // ریدایرکت خودکار به /admin/#/
+    if (window.location.pathname === '/admin') {
+      window.location.replace('/admin/#/');
     }
   </script>
 </head>
@@ -20,7 +20,7 @@
       window.netlifyIdentity.on("init", user => {
         if (!user) {
           window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
+            document.location.href = "/admin/#/";
           });
         }
       });
