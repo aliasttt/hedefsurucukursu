@@ -1,2 +1,6 @@
 /admin/*   /admin/:splat   200
-/*         /index.html     200 
+/*         /index.html     200
+/kursumuz/d-ehliyeti.html  /kursumuz/d-ehliyeti/   301
+/kursumuz/a1-a2-a-ehliyeti.html  /kursumuz/a1-a2-a-ehliyeti/   301
+/kursumuz/c-c1-ce-ehliyeti.html  /kursumuz/c-c1-ce-ehliyeti/   301
+/kursumuz/direksiyon-dersleri.html  /kursumuz/direksiyon-dersleri/   301 
