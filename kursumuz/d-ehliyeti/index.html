@@ -6,19 +6,27 @@
     <title>Hedef Sürücü Kursu - D Ehliyeti</title>
     <meta name="description" content="D sınıfı ehliyet, minibüs ve otobüs kullanımı için gerekli olan profesyonel sürücü belgesidir.">
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" href="/assets/img/photo_2025-06-09_12-29-21.jpg">
     <style>
-        body { background: #fafafa; }
+        body { background: #f7f7f9; }
         .logo { height: 60px; }
-        .hero-section { background: #222; color: #fff; padding: 48px 0 32px 0; text-align: left; }
-        .hero-section h1 { font-size: 2.5rem; font-weight: bold; }
-        .hero-section p { font-size: 1.2rem; }
-        .main-content { margin-top: 32px; }
-        .card { margin-bottom: 24px; }
-        .price-card { background: #fff; border: 1px solid #eee; box-shadow: 0 2px 8px #0001; }
-        .price-card h3 { font-size: 2.2rem; color: #d32f2f; }
-        .btn-danger { width: 100%; font-size: 1.1rem; }
+        .hero-section { background: linear-gradient(90deg, #d32f2f 0%, #181818 100%); color: #fff; padding: 48px 0 32px 0; border-radius: 0 0 32px 32px; }
+        .hero-section h1 { font-size: 2.7rem; font-weight: bold; letter-spacing: 1px; }
+        .hero-section p { font-size: 1.25rem; margin-bottom: 0; }
+        .main-content { margin-top: 40px; margin-bottom: 40px; }
+        .card { border-radius: 18px; box-shadow: 0 2px 12px #0001; border: none; }
+        .card-header { border-radius: 18px 18px 0 0; font-weight: 600; font-size: 1.1rem; }
+        .list-group-item { display: flex; align-items: center; font-size: 1.08rem; border: none; background: #f9f9fb; margin-bottom: 6px; border-radius: 8px; }
+        .list-group-item i { color: #43a047; margin-right: 10px; font-size: 1.1rem; }
+        .price-card { background: #fff; border: 1px solid #eee; box-shadow: 0 2px 8px #0001; border-radius: 18px; }
+        .price-card h3 { font-size: 2.2rem; color: #d32f2f; font-weight: bold; }
+        .btn-danger { width: 100%; font-size: 1.1rem; border-radius: 8px; }
+        .section-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 18px; color: #d32f2f; }
+        @media (max-width: 991px) {
+            .main-content { margin-top: 24px; }
+        }
         footer { background: #181818; color: #fff; padding: 32px 0 0 0; }
         .footer-links a { color: #fff; margin-right: 16px; text-decoration: none; }
         .footer-links a:hover { text-decoration: underline; }
@@ -59,32 +67,40 @@
     </section>
 
     <main class="container main-content">
-        <div class="row">
+        <div class="row g-4">
             <div class="col-lg-8">
-                <h2 class="mb-3">D Ehliyeti Eğitimi</h2>
-                <p>D sınıfı ehliyet, minibüs ve otobüs kullanımı için gerekli olan profesyonel sürücü belgesidir.</p>
-                <div class="card">
-                    <div class="card-header bg-primary text-white">Eğitim İçeriği</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Teorik dersler</li>
-                        <li class="list-group-item">Direksiyon eğitimi</li>
-                        <li class="list-group-item">Trafik işaretleri ve kuralları</li>
-                        <li class="list-group-item">Araç bakımı ve teknik bilgiler</li>
-                        <li class="list-group-item">İlk yardım eğitimi</li>
-                    </ul>
+                <div class="mb-4">
+                    <div class="section-title">D Ehliyeti Eğitimi</div>
+                    <p style="font-size:1.12rem;">D sınıfı ehliyet, minibüs ve otobüs kullanımı için gerekli olan profesyonel sürücü belgesidir.</p>
                 </div>
-                <div class="card">
-                    <div class="card-header bg-success text-white">Gereksinimler</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">En az 24 yaşında olmak</li>
-                        <li class="list-group-item">B sınıfı ehliyet sahibi olmak</li>
-                        <li class="list-group-item">Sağlık raporu</li>
-                        <li class="list-group-item">Adli sicil kaydı</li>
-                    </ul>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-primary text-white">Eğitim İçeriği</div>
+                            <ul class="list-group list-group-flush p-3">
+                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Teorik dersler</li>
+                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Direksiyon eğitimi</li>
+                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Trafik işaretleri ve kuralları</li>
+                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Araç bakımı ve teknik bilgiler</li>
+                                <li class="list-group-item"><i class="fa fa-check-circle"></i>İlk yardım eğitimi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-header bg-success text-white">Gereksinimler</div>
+                            <ul class="list-group list-group-flush p-3">
+                                <li class="list-group-item"><i class="fa fa-check-circle"></i>En az 24 yaşında olmak</li>
+                                <li class="list-group-item"><i class="fa fa-check-circle"></i>B sınıfı ehliyet sahibi olmak</li>
+                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Sağlık raporu</li>
+                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Adli sicil kaydı</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card price-card text-center">
+                <div class="card price-card text-center h-100 d-flex flex-column justify-content-center align-items-center">
                     <div class="card-header bg-danger text-white">Fiyat</div>
                     <div class="card-body">
                         <h3>₺8.000</h3>
