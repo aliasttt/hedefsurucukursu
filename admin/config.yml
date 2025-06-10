@@ -18,6 +18,11 @@ display_url: https://xn--hedefsrckurslar-4vbbb82h.com.tr
 logo_url: https://xn--hedefsrckurslar-4vbbb82h.com.tr/assets/img/logo.png
 site_name: "Hedef Sürücü Kursu"
 site_description: "Hedef Sürücü Kursu, profesyonel sürücü eğitimi ve danışmanlık hizmetleri sunar. Amacımız, güvenli ve bilinçli sürücüler yetiştirmektir."
+
+# اضافه کردن تنظیمات جدید برای رفع مشکل ریدایرکت
+local_backend: true
+load_config_file: true
+
 collections:
   - name: "pages"
     label: "Sayfalar"
