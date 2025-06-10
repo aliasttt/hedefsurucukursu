@@ -49,7 +49,14 @@ collections:
         fields:
           - { label: "Başlık", name: "title", widget: "string" }
           - { label: "Açıklama", name: "desc", widget: "text" }
-          - { label: "İçerik", name: "body", widget: "markdown" }
+          - label: "Fiyat Kartları"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Kart Başlık", name: "card_title", widget: "string" }
+              - { label: "Kart Açıklama", name: "card_desc", widget: "text" }
+              - { label: "Kart Fiyatı", name: "card_price", widget: "string" }
+              - { label: "Kart Görseli", name: "card_image", widget: "image" }
       - label: "İletişim"
         name: "contact"
         file: "iletisim.html"
@@ -89,6 +96,30 @@ collections:
               - { label: "Pozisyon", name: "position", widget: "string" }
               - { label: "Fotoğraf", name: "photo", widget: "image" }
               - { label: "Açıklama", name: "description", widget: "text" }
+      - label: "Kursumuz"
+        name: "courses"
+        file: "kursumuz.html"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Açıklama", name: "desc", widget: "text" }
+          - label: "Dersler"
+            name: "lessons"
+            widget: "list"
+            fields:
+              - { label: "Ders Başlık", name: "lesson_title", widget: "string" }
+              - { label: "Ders Açıklama", name: "lesson_desc", widget: "text" }
+              - { label: "Ders Görseli", name: "lesson_image", widget: "image" }
+      - label: "Yorumlar"
+        name: "comments"
+        file: "yorumlar.html"
+        fields:
+          - label: "Yorumlar Listesi"
+            name: "comments_list"
+            widget: "list"
+            fields:
+              - { label: "İsim", name: "name", widget: "string" }
+              - { label: "Yorum", name: "comment", widget: "text" }
+              - { label: "Avatar", name: "avatar", widget: "image" }
 
   - name: "images"
     label: "Görseller"
