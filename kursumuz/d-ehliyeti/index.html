@@ -10,17 +10,131 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <img src="/assets/img/ChatGPT Image Jun 8, 2025, 11_34_41 AM.png" alt="Hedef Sürücü Kursu Logo">
-    <a class="nav-link" href="/hakkimizda/">Hakkımızda</a>
-    <a class="nav-link" href="/ekibimiz/">Ekibimiz</a>
-    <a class="nav-link" href="/sikca-sorulan-sorular/">S.S.S</a>
-    <a class="nav-link" href="/duyurular/">Duyurular</a>
-    <a class="nav-link" href="/kursumuz/">Kursumuz</a>
-    <a class="nav-link" href="/kurs-fiyatlarimiz/">Fiyatlar</a>
-    <a class="nav-link" href="/iletisim/">İletişim</a>
-    <a href="/hakkimizda/" class="footer-link">Hakkımızda</a>
-    <a href="/kursumuz/" class="footer-link">Kursumuz</a>
-    <a href="/duyurular/" class="footer-link">Duyurular</a>
-    <a href="/iletisim/" class="footer-link">İletişim</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/assets/img/logo.png" alt="Hedef Sürücü Kursu Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/hakkimizda/">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ekibimiz/">Ekibimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sikca-sorulan-sorular/">S.S.S</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/duyurular/">Duyurular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/kursumuz/">Kursumuz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/kurs-fiyatlarimiz/">Fiyatlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/iletisim/">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('/assets/img/d-ehliyeti-hero.jpg');">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 text-white mb-4">D Ehliyeti</h1>
+                    <p class="lead text-white mb-4">Profesyonel sürücü eğitimi ile D sınıfı ehliyet sahibi olun</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">D Ehliyeti Eğitimi</h2>
+                    <p class="lead mb-4">D sınıfı ehliyet, minibüs ve otobüs kullanımı için gerekli olan profesyonel sürücü belgesidir.</p>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="h4 mb-3">Eğitim İçeriği</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i>Teorik dersler</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i>Direksiyon eğitimi</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i>Trafik işaretleri ve kuralları</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i>Araç bakımı ve teknik bilgiler</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i>İlk yardım eğitimi</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="h4 mb-3">Gereksinimler</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i>En az 24 yaşında olmak</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i>B sınıfı ehliyet sahibi olmak</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i>Sağlık raporu</li>
+                                <li class="mb-3"><i class="fas fa-check text-success me-2"></i>Adli sicil kaydı</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Fiyat</h4>
+                            <p class="display-4 mb-3">₺8.000</p>
+                            <a href="/iletisim/" class="btn w-100 mb-3">Kayıt Ol</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Hızlı Bağlantılar</h5>
+                    <a href="/hakkimizda/" class="footer-link">Hakkımızda</a>
+                    <a href="/kursumuz/" class="footer-link">Kursumuz</a>
+                    <a href="/duyurular/" class="footer-link">Duyurular</a>
+                    <a href="/iletisim/" class="footer-link">İletişim</a>
+                </div>
+                <div class="col-lg-4">
+                    <h5>İletişim</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Adres bilgisi</p>
+                    <p><i class="fas fa-phone me-2"></i>Telefon numarası</p>
+                    <p><i class="fas fa-envelope me-2"></i>E-posta adresi</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Sosyal Medya</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html> 
