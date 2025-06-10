@@ -24,146 +24,153 @@ local_backend: true
 load_config_file: true
 
 collections:
-  - name: "site_settings"
-    label: "Site Ayarları"
+  - name: "home"
+    label: "Ana Sayfa"
     files:
-      - label: "Genel Ayarlar"
-        name: "general"
-        file: "data/settings.json"
-        fields:
-          - { label: "Site Başlığı", name: "site_title", widget: "string" }
-          - { label: "Site Açıklaması", name: "site_description", widget: "text" }
-          - { label: "Logo", name: "logo", widget: "image" }
-          - { label: "Favicon", name: "favicon", widget: "image" }
-          - { label: "Meta Keywords", name: "meta_keywords", widget: "string" }
-          - { label: "Meta Description", name: "meta_description", widget: "text" }
-
-      - label: "İletişim Bilgileri"
-        name: "contact"
-        file: "data/contact.json"
-        fields:
-          - { label: "Adres", name: "address", widget: "string" }
-          - { label: "Telefon", name: "phone", widget: "string" }
-          - { label: "E-posta", name: "email", widget: "string" }
-          - { label: "WhatsApp", name: "whatsapp", widget: "string" }
-          - { label: "Instagram", name: "instagram", widget: "string" }
-          - { label: "Facebook", name: "facebook", widget: "string" }
-          - { label: "Çalışma Saatleri", name: "working_hours", widget: "text" }
-          - { label: "Google Maps Embed URL", name: "maps_url", widget: "string" }
-
-      - label: "Sosyal Medya"
-        name: "social"
-        file: "data/social.json"
-        fields:
-          - { label: "Instagram URL", name: "instagram", widget: "string" }
-          - { label: "Facebook URL", name: "facebook", widget: "string" }
-          - { label: "WhatsApp URL", name: "whatsapp", widget: "string" }
-          - { label: "YouTube URL", name: "youtube", widget: "string" }
-
-  - name: "pages"
-    label: "Sayfalar"
-    files:
-      - label: "Ana Sayfa"
+      - label: "Ana Sayfa İçeriği"
         name: "home"
         file: "data/home.json"
         fields:
-          - { label: "Hero Başlık", name: "hero_title", widget: "string" }
-          - { label: "Hero Alt Başlık", name: "hero_subtitle", widget: "string" }
-          - { label: "Hero Görsel", name: "hero_image", widget: "image" }
-          - { label: "Hakkımızda Özet", name: "about_summary", widget: "text" }
+          - { label: "Hero Başlık", name: "hero_title", widget: "string", required: false }
+          - { label: "Hero Alt Başlık", name: "hero_subtitle", widget: "string", required: false }
+          - { label: "Hero Görsel", name: "hero_image", widget: "image", required: false }
+          - { label: "Hero Video", name: "hero_video", widget: "string", required: false }
+          - { label: "Hakkımızda Özet", name: "about_summary", widget: "text", required: false }
           - label: "Öne Çıkan Kurslar"
             name: "featured_courses"
             widget: "list"
             fields:
-              - { label: "Kurs Adı", name: "title", widget: "string" }
-              - { label: "Açıklama", name: "description", widget: "text" }
-              - { label: "Görsel", name: "image", widget: "image" }
-              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Kurs Adı", name: "title", widget: "string", required: false }
+              - { label: "Açıklama", name: "description", widget: "text", required: false }
+              - { label: "Görsel", name: "image", widget: "image", required: false }
+              - { label: "Video", name: "video", widget: "string", required: false }
+              - { label: "Link", name: "link", widget: "string", required: false }
 
-      - label: "Hakkımızda"
+  - name: "about"
+    label: "Hakkımızda"
+    files:
+      - label: "Hakkımızda İçeriği"
         name: "about"
         file: "data/about.json"
         fields:
-          - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "Alt Başlık", name: "subtitle", widget: "string" }
-          - { label: "Ana Görsel", name: "main_image", widget: "image" }
-          - { label: "İçerik", name: "content", widget: "markdown" }
+          - { label: "Başlık", name: "title", widget: "string", required: false }
+          - { label: "Alt Başlık", name: "subtitle", widget: "string", required: false }
+          - { label: "Ana Görsel", name: "main_image", widget: "image", required: false }
+          - { label: "Video", name: "main_video", widget: "string", required: false }
+          - { label: "İçerik", name: "content", widget: "markdown", required: false }
           - label: "Özellikler"
             name: "features"
             widget: "list"
             fields:
-              - { label: "Başlık", name: "title", widget: "string" }
-              - { label: "Açıklama", name: "description", widget: "text" }
-              - { label: "İkon", name: "icon", widget: "string" }
+              - { label: "Başlık", name: "title", widget: "string", required: false }
+              - { label: "Açıklama", name: "description", widget: "text", required: false }
+              - { label: "İkon", name: "icon", widget: "string", required: false }
 
-      - label: "Kurslar"
+  - name: "courses"
+    label: "Kurslar"
+    files:
+      - label: "Kurslar İçeriği"
         name: "courses"
         file: "data/courses.json"
         fields:
-          - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "Açıklama", name: "description", widget: "text" }
+          - { label: "Başlık", name: "title", widget: "string", required: false }
+          - { label: "Açıklama", name: "description", widget: "text", required: false }
           - label: "Kurs Listesi"
             name: "course_list"
             widget: "list"
             fields:
-              - { label: "Kurs Adı", name: "title", widget: "string" }
-              - { label: "Slug", name: "slug", widget: "string" }
-              - { label: "Açıklama", name: "description", widget: "text" }
-              - { label: "Fiyat", name: "price", widget: "string" }
-              - { label: "Süre", name: "duration", widget: "string" }
-              - { label: "Görsel", name: "image", widget: "image" }
-              - { label: "İçerik", name: "content", widget: "markdown" }
+              - { label: "Kurs Adı", name: "title", widget: "string", required: false }
+              - { label: "Slug", name: "slug", widget: "string", required: false }
+              - { label: "Açıklama", name: "description", widget: "text", required: false }
+              - { label: "Fiyat", name: "price", widget: "string", required: false }
+              - { label: "Süre", name: "duration", widget: "string", required: false }
+              - { label: "Görsel", name: "image", widget: "image", required: false }
+              - { label: "Video", name: "video", widget: "string", required: false }
+              - { label: "İçerik", name: "content", widget: "markdown", required: false }
               - label: "Özellikler"
                 name: "features"
                 widget: "list"
                 fields:
-                  - { label: "Özellik", name: "feature", widget: "string" }
+                  - { label: "Özellik", name: "feature", widget: "string", required: false }
 
-      - label: "Duyurular"
+  - name: "announcements"
+    label: "Duyurular"
+    files:
+      - label: "Duyurular İçeriği"
         name: "announcements"
         file: "data/announcements.json"
         fields:
-          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Başlık", name: "title", widget: "string", required: false }
           - label: "Duyuru Listesi"
             name: "announcement_list"
             widget: "list"
             fields:
-              - { label: "Başlık", name: "title", widget: "string" }
-              - { label: "Tarih", name: "date", widget: "datetime" }
-              - { label: "Görsel", name: "image", widget: "image" }
-              - { label: "İçerik", name: "content", widget: "markdown" }
+              - { label: "Başlık", name: "title", widget: "string", required: false }
+              - { label: "Tarih", name: "date", widget: "datetime", required: false }
+              - { label: "Görsel", name: "image", widget: "image", required: false }
+              - { label: "Video", name: "video", widget: "string", required: false }
+              - { label: "İçerik", name: "content", widget: "markdown", required: false }
 
-      - label: "S.S.S"
+  - name: "faq"
+    label: "Sıkça Sorulan Sorular"
+    files:
+      - label: "S.S.S İçeriği"
         name: "faq"
         file: "data/faq.json"
         fields:
-          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Başlık", name: "title", widget: "string", required: false }
           - label: "Soru Listesi"
             name: "faq_list"
             widget: "list"
             fields:
-              - { label: "Soru", name: "question", widget: "string" }
-              - { label: "Cevap", name: "answer", widget: "markdown" }
+              - { label: "Soru", name: "question", widget: "string", required: false }
+              - { label: "Cevap", name: "answer", widget: "markdown", required: false }
 
-      - label: "Ekibimiz"
+  - name: "team"
+    label: "Ekibimiz"
+    files:
+      - label: "Ekibimiz İçeriği"
         name: "team"
         file: "data/team.json"
         fields:
-          - { label: "Başlık", name: "title", widget: "string" }
-          - { label: "Açıklama", name: "description", widget: "text" }
+          - { label: "Başlık", name: "title", widget: "string", required: false }
+          - { label: "Açıklama", name: "description", widget: "text", required: false }
           - label: "Ekip Üyeleri"
             name: "team_members"
             widget: "list"
             fields:
-              - { label: "İsim", name: "name", widget: "string" }
-              - { label: "Pozisyon", name: "position", widget: "string" }
-              - { label: "Fotoğraf", name: "photo", widget: "image" }
-              - { label: "Açıklama", name: "description", widget: "text" }
-              - { label: "Sosyal Medya", name: "social_media", widget: "object", fields: [
-                  { label: "Instagram", name: "instagram", widget: "string", required: false },
-                  { label: "Facebook", name: "facebook", widget: "string", required: false },
-                  { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
-                ]}
+              - { label: "İsim", name: "name", widget: "string", required: false }
+              - { label: "Pozisyon", name: "position", widget: "string", required: false }
+              - { label: "Fotoğraf", name: "photo", widget: "image", required: false }
+              - { label: "Açıklama", name: "description", widget: "text", required: false }
+              - label: "Sosyal Medya"
+                name: "social_media"
+                widget: "object"
+                fields:
+                  - { label: "Instagram", name: "instagram", widget: "string", required: false }
+                  - { label: "Facebook", name: "facebook", widget: "string", required: false }
+                  - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+
+  - name: "contact"
+    label: "İletişim"
+    files:
+      - label: "İletişim Bilgileri"
+        name: "contact"
+        file: "data/contact.json"
+        fields:
+          - { label: "Adres", name: "address", widget: "string", required: false }
+          - { label: "Telefon", name: "phone", widget: "string", required: false }
+          - { label: "E-posta", name: "email", widget: "string", required: false }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string", required: false }
+          - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - { label: "Facebook", name: "facebook", widget: "string", required: false }
+          - label: "Çalışma Saatleri"
+            name: "working_hours"
+            widget: "list"
+            fields:
+              - { label: "Gün", name: "day", widget: "string", required: false }
+              - { label: "Saat", name: "hours", widget: "string", required: false }
+          - { label: "Google Maps Embed URL", name: "maps_url", widget: "string", required: false }
 
   - name: "images"
     label: "Görseller"
@@ -176,7 +183,7 @@ collections:
             name: "image_list"
             widget: "list"
             fields:
-              - { label: "Görsel", name: "image", widget: "image" }
-              - { label: "Açıklama", name: "caption", widget: "string" }
-              - { label: "Kategori", name: "category", widget: "select", options: ["hero", "team", "news", "other"] }
-              - { label: "Alt Text", name: "alt", widget: "string" }
+              - { label: "Görsel", name: "image", widget: "image", required: false }
+              - { label: "Açıklama", name: "caption", widget: "string", required: false }
+              - { label: "Kategori", name: "category", widget: "select", options: ["hero", "team", "news", "other"], required: false }
+              - { label: "Alt Text", name: "alt", widget: "string", required: false }
