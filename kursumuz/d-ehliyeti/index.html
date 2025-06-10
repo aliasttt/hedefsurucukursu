@@ -24,14 +24,20 @@
         .price-card h3 { font-size: 2.2rem; color: #d32f2f; font-weight: bold; }
         .btn-danger { width: 100%; font-size: 1.1rem; border-radius: 8px; }
         .section-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 18px; color: #d32f2f; }
+        .gallery-img { width: 100%; border-radius: 14px; margin-bottom: 18px; box-shadow: 0 2px 8px #0001; }
+        .navbar-nav .nav-link { border-bottom: none !important; padding-bottom: 0.5rem; }
+        .navbar-nav .nav-link.active { color: #d32f2f !important; font-weight: bold; }
+        .navbar-nav { gap: 18px; }
+        .footer-flex { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 32px; }
+        .footer-col { flex: 1 1 0; min-width: 180px; }
+        .footer-links, .footer-social { display: flex; gap: 18px; align-items: center; }
+        .footer-links a, .footer-social a { color: #fff; text-decoration: none; font-size: 1.08rem; }
+        .footer-links a:hover, .footer-social a:hover { text-decoration: underline; }
+        .footer-bottom { border-top: 1px solid #333; margin-top: 24px; padding: 12px 0; font-size: 0.95rem; color: #bbb; text-align: center; }
         @media (max-width: 991px) {
             .main-content { margin-top: 24px; }
+            .footer-flex { flex-direction: column; gap: 18px; }
         }
-        footer { background: #181818; color: #fff; padding: 32px 0 0 0; }
-        .footer-links a { color: #fff; margin-right: 16px; text-decoration: none; }
-        .footer-links a:hover { text-decoration: underline; }
-        .footer-social a { color: #fff; margin-right: 12px; font-size: 1.3rem; }
-        .footer-bottom { border-top: 1px solid #333; margin-top: 24px; padding: 12px 0; font-size: 0.95rem; color: #bbb; }
     </style>
 </head>
 <body>
@@ -98,6 +104,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-4 g-3">
+                    <div class="col-md-4">
+                        <img src="/assets/img/pexels-fauxels-3184317.jpg" alt="Eğitim Fotoğrafı 1" class="gallery-img">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/img/pexels-jeshoots-7433.jpg" alt="Eğitim Fotoğrafı 2" class="gallery-img">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/img/pexels-mikebirdy-195632.jpg" alt="Eğitim Fotoğrafı 3" class="gallery-img">
+                    </div>
+                </div>
             </div>
             <div class="col-lg-4">
                 <div class="card price-card text-center h-100 d-flex flex-column justify-content-center align-items-center">
@@ -113,28 +130,28 @@
 
     <footer class="mt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3">
+            <div class="footer-flex">
+                <div class="footer-col">
                     <h5>İletişim</h5>
-                    <p>Adres bilgisi</p>
-                    <p>Telefon numarası</p>
-                    <p>E-posta adresi</p>
+                    <span>Adres bilgisi</span>
+                    <span>Telefon numarası</span>
+                    <span>E-posta adresi</span>
                 </div>
-                <div class="col-md-4 mb-3 footer-links">
+                <div class="footer-col footer-links">
                     <h5>Hızlı Bağlantılar</h5>
                     <a href="/hakkimizda/">Hakkımızda</a>
                     <a href="/kursumuz/">Kursumuz</a>
                     <a href="/duyurular/">Duyurular</a>
                     <a href="/iletisim/">İletişim</a>
                 </div>
-                <div class="col-md-4 mb-3 footer-social">
+                <div class="footer-col footer-social">
                     <h5>Sosyal Medya</h5>
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom text-center mt-3">&copy; 2025 Hedef Sürücü Kursu. Tüm hakları saklıdır.</div>
+            <div class="footer-bottom mt-3">&copy; 2025 Hedef Sürücü Kursu. Tüm hakları saklıdır.</div>
         </div>
     </footer>
 
