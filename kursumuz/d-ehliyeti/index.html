@@ -4,159 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hedef Sürücü Kursu - D Ehliyeti</title>
-    <meta name="description" content="D sınıfı ehliyet, minibüs ve otobüs kullanımı için gerekli olan profesyonel sürücü belgesidir.">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="icon" href="/assets/img/photo_2025-06-09_12-29-21.jpg">
-    <style>
-        body { background: #f7f7f9; }
-        .logo { height: 60px; }
-        .hero-section { background: linear-gradient(90deg, #d32f2f 0%, #181818 100%); color: #fff; padding: 48px 0 32px 0; border-radius: 0 0 32px 32px; }
-        .hero-section h1 { font-size: 2.7rem; font-weight: bold; letter-spacing: 1px; }
-        .hero-section p { font-size: 1.25rem; margin-bottom: 0; }
-        .main-content { margin-top: 40px; margin-bottom: 40px; }
-        .card { border-radius: 18px; box-shadow: 0 2px 12px #0001; border: none; }
-        .card-header { border-radius: 18px 18px 0 0; font-weight: 600; font-size: 1.1rem; }
-        .list-group-item { display: flex; align-items: center; font-size: 1.08rem; border: none; background: #f9f9fb; margin-bottom: 6px; border-radius: 8px; }
-        .list-group-item i { color: #43a047; margin-right: 10px; font-size: 1.1rem; }
-        .price-card { background: #fff; border: 1px solid #eee; box-shadow: 0 2px 8px #0001; border-radius: 18px; }
-        .price-card h3 { font-size: 2.2rem; color: #d32f2f; font-weight: bold; }
-        .btn-danger { width: 100%; font-size: 1.1rem; border-radius: 8px; }
-        .section-title { font-size: 1.3rem; font-weight: 600; margin-bottom: 18px; color: #d32f2f; }
-        .gallery-img { width: 100%; max-width: 220px; height: auto; border-radius: 14px; margin-bottom: 18px; box-shadow: 0 2px 8px #0001; object-fit: cover; }
-        .navbar-nav .nav-link { border-bottom: none !important; padding-bottom: 0.5rem; }
-        .navbar-nav .nav-link.active { color: #d32f2f !important; font-weight: bold; }
-        .navbar-nav { gap: 18px; }
-        .footer-flex { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 32px; }
-        .footer-col { flex: 1 1 0; min-width: 180px; }
-        .footer-links, .footer-social { display: flex; gap: 18px; align-items: center; }
-        .footer-links a, .footer-social a { color: #fff; text-decoration: none; font-size: 1.08rem; }
-        .footer-links a:hover, .footer-social a:hover { text-decoration: underline; }
-        .footer-bottom { border-top: 1px solid #333; margin-top: 24px; padding: 12px 0; font-size: 0.95rem; color: #bbb; text-align: center; }
-        @media (max-width: 991px) {
-            .main-content { margin-top: 24px; }
-            .footer-flex { flex-direction: column; gap: 18px; }
-        }
-    </style>
 </head>
 <body>
     <!-- Loading Animation -->
     <div class="loading">
         <div class="loading-spinner"></div>
     </div>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/assets/img/photo_2025-06-09_12-29-21.jpg" alt="Hedef Sürücü Kursu Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/hakkimizda/">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ekibimiz/">Ekibimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sikca-sorulan-sorular/">S.S.S</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/duyurular/">Duyurular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/kursumuz/">Kursumuz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/iletisim/">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Content -->
+    <main>
+        <section class="py-5 course-content-spacing-sm">
             <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img src="assets/img/photo_2025-06-09_12-29-21.jpg" alt="Hedef Sürücü Kursu Logo" class="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="navbar-nav ms-auto mb-2 mb-lg-0" style="flex-direction: row !important;">
-                        <li class="nav-item"><a class="nav-link" href="/hakkimizda/">Hakkımızda</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/ekibimiz/">Ekibimiz</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/sikca-sorulan-sorular/">S.S.S</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/duyurular/">Duyurular</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="/kursumuz/">Kursumuz</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/iletisim/">İletişim</a></li>
-                    </ul>
+                <h2 class="text-center section-title mb-5">D Ehliyeti</h2>
+                <div class="row g-4">
+                    <!-- Course Info -->
+                    <div class="col-12 col-lg-8 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title mb-4">D Sınıfı Ehliyet Nedir?</h3>
+                                <p class="card-text">D sınıfı ehliyet, otobüs ve minibüs gibi büyük yolcu taşıma araçlarını kullanmak isteyen sürücüler için gereklidir. Ticari taşıma yapacak kişilerin bu belgeye sahip olması zorunludur.</p>
+                                
+                                <h4 class="mt-4 mb-3">D Sınıfı Ehliyet Şartları</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-id-card text-success me-2"></i>En az B sınıfı ehliyete sahip olmak</li>
+                                    <li class="mb-2"><i class="fas fa-user text-success me-2"></i>Yaş sınırı: <strong>24 yaş</strong></li>
+                                    <li class="mb-2"><i class="fas fa-clock text-success me-2"></i>Psikoteknik değerlendirme ve sağlık raporu</li>
+                                </ul>
+
+                                <h4 class="mt-4 mb-3">Eğitim İçeriği</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Teorik Dersler (Trafik, İlkyardım, Motor, Trafik Adabı)</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Direksiyon Eğitimi (Otobüs Üzerinde Pratik)</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Araç Bilgisi ve Yolcu Güvenliği</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Şehir içi ve şehirler arası sürüş teknikleri</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course Features -->
+                    <div class="col-12 col-lg-4">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Eğitim Özellikleri</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-user-tie me-2"></i>Deneyimli Otobüs Eğitmenleri</li>
+                                    <li class="mb-2"><i class="fas fa-clock me-2"></i>Esnek Ders Saatleri</li>
+                                    <li class="mb-2"><i class="fas fa-bus me-2"></i>Modern ve Güvenli Araç Filosu</li>
+                                    <li class="mb-2"><i class="fas fa-chart-line me-2"></i>Yüksek Başarı Oranı</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
+        </section>
+    </main>
 
-    <section class="hero-section">
+    <div class="mobile-spacer"></div>
+
+    <!-- Map Section -->
+    <section class="map-section py-5">
         <div class="container">
-            <h1>D Ehliyeti</h1>
-            <p>Profesyonel sürücü eğitimi ile D sınıfı ehliyet sahibi olun</p>
+            <h2 class="text-center section-title mb-5">Konumumuz</h2>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps?q=diyarbakır+bağlar+bağcılar&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
     </section>
 
-    <main class="container main-content" style="max-width: 1100px;">
-        <div class="row g-4">
-            <div class="col-lg-8">
-                <div class="mb-4">
-                    <div class="section-title">D Ehliyeti Eğitimi</div>
-                    <p style="font-size:1.12rem;">D sınıfı ehliyet, minibüs ve otobüs kullanımı için gerekli olan profesyonel sürücü belgesidir.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="card h-100">
-                            <div class="card-header bg-primary text-white">Eğitim İçeriği</div>
-                            <ul class="list-group list-group-flush p-3">
-                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Teorik dersler</li>
-                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Direksiyon eğitimi</li>
-                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Trafik işaretleri ve kuralları</li>
-                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Araç bakımı ve teknik bilgiler</li>
-                                <li class="list-group-item"><i class="fa fa-check-circle"></i>İlk yardım eğitimi</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card h-100">
-                            <div class="card-header bg-success text-white">Gereksinimler</div>
-                            <ul class="list-group list-group-flush p-3">
-                                <li class="list-group-item"><i class="fa fa-check-circle"></i>En az 24 yaşında olmak</li>
-                                <li class="list-group-item"><i class="fa fa-check-circle"></i>B sınıfı ehliyet sahibi olmak</li>
-                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Sağlık raporu</li>
-                                <li class="list-group-item"><i class="fa fa-check-circle"></i>Adli sicil kaydı</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-4 g-3">
-                    <div class="col-md-4">
-                        <img src="/assets/img/pexels-fauxels-3184317.jpg" alt="Eğitim Fotoğrafı 1" class="gallery-img">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="/assets/img/pexels-jeshoots-7433.jpg" alt="Eğitim Fotoğrafı 2" class="gallery-img">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="/assets/img/pexels-mikebirdy-195632.jpg" alt="Eğitim Fotoğrafı 3" class="gallery-img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="mt-5">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="footer-flex">
-                <div class="footer-col">
+            <div class="row">
+                <div class="col-lg-4">
                     <h5>İletişim</h5>
-                    <span>Adres bilgisi</span>
-                    <span>Telefon: <a href="tel:+905011074821" style="color:inherit">+90 501 107 48 21</a></span>
-                    <span>E-posta: <a href="mailto:hedefsurucukursu21@gmail.com" style="color:inherit">hedefsurucukursu21@gmail.com</a></span>
+                    <p>diyarbakır ,bağlar ,bağcılar</p>
+                    <p>Tel: <a href="tel:+905011074821" style="color:inherit">+90 501 107 48 21</a></p>
+                    <p>E-posta: <a href="mailto:hedefsurucukursu21@gmail.com" style="color:inherit">hedefsurucukursu21@gmail.com</a></p>
                 </div>
-                <div class="footer-col footer-links">
+                <div class="col-lg-4">
                     <h5>Hızlı Bağlantılar</h5>
-                    <a href="/hakkimizda/">Hakkımızda</a>
-                    <a href="/kursumuz/">Kursumuz</a>
-                    <a href="/duyurular/">Duyurular</a>
-                    <a href="/iletisim/">İletişim</a>
+                    <a href="/hakkimizda" class="footer-link">Hakkımızda</a>
+                    <a href="/kursumuz" class="footer-link">Kursumuz</a>
+                    <a href="/duyurular" class="footer-link">Duyurular</a>
+                    <a href="/iletisim" class="footer-link">İletişim</a>
                 </div>
-                <div class="footer-col footer-social">
+                <div class="col-lg-4">
                     <h5>Sosyal Medya</h5>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/905011074821" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <div class="social-icons">
+                        <a href="https://wa.me/905011074821" target="_blank" rel="noopener noreferrer" class="social-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/YOUR_INSTAGRAM" target="_blank" rel="noopener noreferrer" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom mt-3">&copy; 2025 Hedef Sürücü Kursu. Tüm hakları saklıdır.</div>
         </div>
     </footer>
 
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/main.js"></script>
-<script>
-// Preloader hide on load
-window.addEventListener('load', function() {
-    var loader = document.querySelector('.loading');
-    if(loader) loader.style.display = 'none';
-});
-</script>
+    <!-- WhatsApp Fixed Button -->
+    <div class="whatsapp-fixed">
+        <a href="https://wa.me/905011074821" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Loading Animation
+        window.addEventListener('load', function() {
+            document.querySelector('.loading').classList.add('hidden');
+        });
+    </script>
 </body>
-</html> 
+</html>
