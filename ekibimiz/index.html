@@ -14,6 +14,13 @@
     <div class="loading">
         <div class="loading-spinner"></div>
     </div>
+    <script>
+    // Preloader hide on load
+    window.addEventListener('load', function() {
+        var loader = document.querySelector('.loading');
+        if(loader) loader.style.display = 'none';
+    });
+    </script>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
