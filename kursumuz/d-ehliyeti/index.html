@@ -41,6 +41,10 @@
     </style>
 </head>
 <body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -134,8 +138,8 @@
                 <div class="footer-col">
                     <h5>İletişim</h5>
                     <span>Adres bilgisi</span>
-                    <span>Telefon numarası</span>
-                    <span>E-posta adresi</span>
+                    <span>Telefon: <a href="tel:+905011074821" style="color:inherit">+90 501 107 48 21</a></span>
+                    <span>E-posta: <a href="mailto:hedefsurucukursu21@gmail.com" style="color:inherit">hedefsurucukursu21@gmail.com</a></span>
                 </div>
                 <div class="footer-col footer-links">
                     <h5>Hızlı Bağlantılar</h5>
@@ -148,7 +152,7 @@
                     <h5>Sosyal Medya</h5>
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/905011074821" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-bottom mt-3">&copy; 2025 Hedef Sürücü Kursu. Tüm hakları saklıdır.</div>
@@ -157,5 +161,12 @@
 
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>
+<script>
+// Preloader hide on load
+window.addEventListener('load', function() {
+    var loader = document.querySelector('.loading');
+    if(loader) loader.style.display = 'none';
+});
+</script>
 </body>
 </html> 
